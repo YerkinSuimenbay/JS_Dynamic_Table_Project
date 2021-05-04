@@ -1,0 +1,81 @@
+:root {
+    --hover-color: rgb(8, 170, 103);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+/* INPUT */
+#searchInput {
+    background-image: url('/img/search-solid.svg');
+    background-position: 10px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+  
+/* TABLE */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr {
+    transition: all .1s;
+}
+
+tr:hover, th:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
