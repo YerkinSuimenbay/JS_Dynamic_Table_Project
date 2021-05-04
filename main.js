@@ -6,7 +6,7 @@ const url = "https://jsonplaceholder.typicode.com/users"
 // const url = "https://jsonplaceholder.typicode.com/comments"
 // const url = "https://jsonplaceholder.typicode.com/posts"
 
-// TO TOGGLE THE ASCENDING / DESCENDING SORTION
+// TO TOGGLE THE ASCENDING / DESCENDING SORTING
 let sortDirection = true
 
 // FETCHING THE DATA
