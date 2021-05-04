@@ -97,7 +97,7 @@ const sortColumn = (e, items, sortDirection, prevProp) => {
     if (typeof items[0][prop] === "string") {
         items.sort((a, b) => {
             let propA = a[prop].toUpperCase(); 
-            var propB = b[prop].toUpperCase();
+            let propB = b[prop].toUpperCase();
             if (propA < propB) {
                 return sortDirection ? -1: 1;
             }
@@ -113,7 +113,7 @@ const sortColumn = (e, items, sortDirection, prevProp) => {
     if (typeof items[0][prop] === "object") {
         items.sort((a, b) => {
             let propA = a[prop][Object.keys(a[prop])[0]].toUpperCase(); 
-            var propB = b[prop][Object.keys(b[prop])[0]].toUpperCase();
+            let propB = b[prop][Object.keys(b[prop])[0]].toUpperCase();
             if (propA < propB) {
                 return sortDirection ? -1: 1;
             }
